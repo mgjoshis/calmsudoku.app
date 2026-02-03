@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sudoku – Classic & Calm</title>
+  <meta name="description" content="Sudoku – Classic & Calm: a calm and classic Sudoku experience. Privacy policy, support, and developer contact." />
+  <style>
+    :root{
+      --bg:#f6fbf9;
+      --card:#ffffff;
+      --ink:#0b2f2b;
+      --muted:#3b6d66;
+      --accent:#176652;
+      --radius:12px;
+      --max-width:720px;
+      --gap:18px;
+      --sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --reduced-motion:0s;
+    }
+    @media (prefers-reduced-motion:reduce){:root{--reduced-motion:0ms}}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:linear-gradient(180deg,var(--bg),#eef7f4);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      -webkit-text-size-adjust:100%;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-width);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#e9f7f4,#dff3ee);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--accent);
+      font-weight:700;
+      font-size:20px;
+      box-shadow:0 2px 8px rgba(10,30,25,0.06);
+      flex:0 0 56px;
+    }
+    h1{font-size:18px;margin:0;color:var(--ink)}
+    .tagline{font-size:13px;color:var(--muted);margin-top:2px}
+    nav{display:flex;gap:8px}
+    a.btn{
+      text-decoration:none;
+      color:var(--accent);
+      font-weight:600;
+      padding:8px 12px;
+      border-radius:10px;
+      background:transparent;
+      border:1px solid transparent;
+      transition:all .12s var(--reduced-motion);
+      font-size:14px;
+    }
+    a.btn:focus,a.btn:hover{background:rgba(23,102,82,0.06);outline:none}
+    main{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(9,18,16,0.04)}
+    .lead{font-size:15px;color:var(--muted);margin:0 0 var(--gap) 0}
+    section{margin-bottom:16px}
+    h2{font-size:15px;margin:0 0 8px 0;color:var(--ink)}
+    p{margin:0 0 10px 0;font-size:14px;color:#25433f}
+    ul{margin:0 0 12px 20px;color:#25433f}
+    li{margin-bottom:8px}
+    .muted{color:var(--muted);font-size:13px}
+    .policy-list{display:grid;gap:10px}
+    .small{font-size:13px;color:#466e67}
+    footer{margin-top:14px;text-align:center;color:var(--muted);font-size:13px}
+    .card{background:#f8fffd;border-radius:10px;padding:12px;border:1px solid rgba(23,102,82,0.06)}
+    .contact{display:grid;gap:8px}
+    .support-list{display:grid;gap:6px;margin-top:6px}
+    code{background:#eef7f2;padding:2px 6px;border-radius:6px;font-size:13px;color:var(--accent)}
+    a.link{color:var(--accent);text-decoration:underline}
+    .meta{font-size:13px;color:var(--muted)}
+    .top-links{display:flex;gap:8px;align-items:center}
+    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    @media (max-width:520px){
+      header{flex-direction:column;align-items:flex-start}
+      .logo{width:48px;height:48px;font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap" role="document" aria-labelledby="site-title">
+    <header>
+      <div class="brand" role="banner">
+        <div class="logo" aria-hidden="true">S</div>
+        <div>
+          <h1 id="site-title">Sudoku – Classic & Calm</h1>
+          <div class="tagline">A calm and classic Sudoku experience</div>
+        </div>
+      </div>
+      <nav class="top-links" aria-label="Primary">
+        <a class="btn" href="#privacy-policy">Privacy Policy</a>
+        <a class="btn" href="#support">Support</a>
+      </nav>
+    </header>
+
+    <main id="main" role="main" aria-labelledby="main-heading">
+      <p class="lead">Welcome — this is the official page for <strong>Sudoku – Classic & Calm</strong> (Android & iOS). Below you will find our privacy information and support details. This page is intended to satisfy App Store and Google Play requirements for a public privacy policy and support contact.</p>
+
+      <section id="privacy-policy" aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Privacy Policy</h2>
+        <p class="muted"><strong>Last updated:</strong> February 3, 2026</p>
+
+        <div class="card policy-list" role="region" aria-label="Privacy policy summary">
+          <div>
+            <strong>Summary</strong>
+            <p class="small">This app is developed by a solo indie developer. It is ads-supported and uses analytics to improve the experience. We do not require accounts, sign-ins, or subscriptions.</p>
+          </div>
+
+          <div>
+            <strong>What the app uses</strong>
+            <ul>
+              <li><strong>Ads:</strong> The app displays ads served by Google AdMob.</li>
+              <li><strong>Analytics:</strong> The app uses Google Firebase Analytics for anonymous usage and crash reporting.</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Data collected</strong>
+            <p class="small">We do not collect personal contact information (such as name, email address, phone number) within the app. The types of data that AdMob and Firebase may collect include device identifiers (e.g., Advertising ID), IP address, device model, operating system, app usage and crash data, and basic advertising interaction information. This data is collected by the third-party services under their policies, not by entering personal details into the app.</p>
+          </div>
+
+          <div>
+            <strong>Purpose of collection</strong>
+            <ul>
+              <li>Deliver and measure ads</li>
+              <li>Analyze and improve app stability and usage</li>
+              <li>Ensure ads comply with applicable rules</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>No account system or extra data collection</strong>
+            <p class="small">The app has no account creation, no login, no subscriptions, no in-app purchases, and does not accept or host user-generated content. Any user-provided contact via email is handled only to respond to support requests and will not be used for marketing unless you explicitly consent.</p>
+          </div>
+
+          <div>
+            <strong>Children’s privacy (COPPA)</strong>
+            <p class="small">This app is suitable for general audiences, including children. We do not knowingly collect personal information from children under 13. Ads may be shown to all users — ad providers (like AdMob) have their own policies and controls regarding ads to children. If a parent believes their child’s personal information has been collected, please contact us (see Support) and we will promptly investigate and remove any such data where required by law.</p>
+          </div>
+
+          <div>
+            <strong>Third-party services</strong>
+            <p class="small">Third-party services used by the app include:</p>
+            <ul>
+              <li><a class="link" href="https://admob.google.com/home/" target="_blank" rel="noopener noreferrer">Google AdMob</a> — Ad delivery and related data collection.</li>
+              <li><a class="link" href="https://firebase.google.com/products/analytics" target="_blank" rel="noopener noreferrer">Google Firebase Analytics</a> — Anonymous analytics and crash reporting.</li>
+            </ul>
+            <p class="small">Please review each provider’s privacy policy and controls for details and opt-out options (for example, device settings or Google Ad Settings).</p>
+          </div>
+
+          <div>
+            <strong>Data retention & deletion</strong>
+            <p class="small">Analytics and ad-related data are retained by the third-party providers according to their policies. We do not retain personal contact information beyond what is needed to respond to support requests. To request deletion of app-related data that we control, contact us at <a class="link" href="mailto:support@example.com">support@example.com</a> with the subject line <code>Data Deletion Request</code> and include your device model, app version, and approximate date of app usage. We will aim to respond and take action within a reasonable timeframe (typically within 30 days).</p>
+          </div>
+
+          <div>
+            <strong>Do we sell personal data?</strong>
+            <p class="small">No. We do not sell personal data to third parties. Any sharing of data is limited to service providers for the purposes covered above (ads, analytics) and only as necessary to provide those services.</p>
+          </div>
+
+          <div>
+            <strong>Security</strong>
+            <p class="small">We follow standard practices to protect data we process. However, no method of transmission or storage is completely secure. If you have specific security concerns, contact us via the Support section.</p>
+          </div>
+
+          <div>
+            <strong>Changes to this policy</strong>
+            <p class="small">We may update this policy to reflect changes in the app or legal requirements. The <em>Last updated</em> date at the top will reflect the most recent revision.</p>
+          </div>
+
+          <div>
+            <strong>Contact for privacy questions</strong>
+            <p class="small">For privacy inquiries or to request data deletion, email <a class="link" href="mailto:support@example.com">support@example.com</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" aria-labelledby="support-heading">
+        <h2 id="support-heading">Support</h2>
+        <div class="card">
+          <p class="small">For support, please contact:</p>
+          <div class="contact" role="region" aria-label="Support contact">
+            <div><strong>Email:</strong> <a class="link" href="mailto:support@example.com">support@example.com</a></div>
+            <div class="support-list">
+              <div><strong>What to contact for:</strong></div>
+              <ul>
+                <li><strong>Bug reports:</strong> Please include device model, OS version, and app version (if shown in the app).</li>
+                <li><strong>Feedback & suggestions:</strong> General gameplay, accessibility, or UX feedback.</li>
+                <li><strong>Ads-related issues:</strong> Examples include disruptive ads, inappropriate ads, or incorrect ad behavior — include screenshots where possible.</li>
+              </ul>
+            </div>
+            <p class="muted">This support contact is also the official Support URL for app store listings.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="other-heading">
+        <h2 id="other-heading">Additional notes</h2>
+        <p class="small">This webpage hosts the privacy policy and support details required by Google Play and the Apple App Store. The site contains no tracking scripts and no external analytics. All analytics and ad delivery are performed inside the mobile app by the stated third-party services per their policies.</p>
+      </section>
+
+      <footer>
+        <div class="muted">Developer: <strong>Your Name or Studio</strong></div>
+        <div class="muted">© <span id="year"></span> Your Name or Studio</div>
+        <div style="margin-top:8px"><a class="link" href="#privacy-policy">Privacy Policy</a> · <a class="link" href="#support">Support</a></div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Accessibility: set current year
+    (function(){
+      try{
+        var y = new Date().getFullYear();
+        document.getElementById('year').textContent = y;
+      }catch(e){}
+    })();
+  </script>
+</body>
+</html>
